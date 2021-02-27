@@ -27,5 +27,3 @@ Collection of all my scripts (of anything and everything and in any language)
 
   - Languages : **Python**
   - Utility : Allows you to download episodes of The Simpsons ([learn more](/Simpson-Downloader/))
-  
-<hr/>
