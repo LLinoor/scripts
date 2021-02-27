@@ -2,8 +2,8 @@
 Python.
 
 ## Requiremnts : 
-    - FFMPEG (in PATH for Windows users.)
-    - `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
+- FFMPEG (in PATH for Windows users.)
+- `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 
 ## How to use :
 To retrieve and download the video from the iQiyi servers, you will need to fetch the DASH file of your video.
