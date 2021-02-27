@@ -26,7 +26,7 @@ To retrieve and download the video from the iQiyi servers, you will need to fetc
 
 ## Warnings and explanations :
 
-## Warning :
+### Warning :
 
 YT-DL is supposed to support iQiyi by default however YT-DL doesn't detect iQiyi links and therefore uses its basic scraper. You can look on your side if YT-DL works again, it will be much more convenient for you to use it instead of this script.
 
