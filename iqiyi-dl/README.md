@@ -12,7 +12,7 @@ To retrieve and download the video from the iQiyi servers, you will need to fetc
 
 - Step 2 : Go to the WebTools of your browser (F12 or Ctrl+Shift+I) and go to the Network tab.
 
-![Step 2 in picture](/resources/1.png?raw=true)
+![Step 2 in picture](https://github.com/LLinoor/scripts/blob/main/iqiyi-dl/resources/1.png?raw=true)
 
 - Step 3 : Go to the episode you want to download (example: https://www.iq.com/play/11kx751cbrg)
 
@@ -20,7 +20,7 @@ To retrieve and download the video from the iQiyi servers, you will need to fetc
 
 - Step 5 : Right click on the result and Copy > Copy link address
 
-![Step 5 in picture](/resources/2.png?raw=true)
+![Step 5 in picture](https://github.com/LLinoor/scripts/blob/main/iqiyi-dl/resources/2.png?raw=true)
 
 - Step 6 : Paste the link when the script asks you to.
 
