@@ -23,7 +23,7 @@ Collection of all my scripts (of anything and everything and in any language)
   
 <hr/>
 
-### Simpson-Downloader
+### simpsons-dl
 
   - Languages : **Python**
-  - Utility : Allows you to download episodes of The Simpsons in **english** or **french** ([learn more](/Simpson-Downloader/))
+  - Utility : Allows you to download episodes of The Simpsons in **english** or **french** ([learn more](/simpsons-dl/))
