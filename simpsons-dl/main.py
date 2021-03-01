@@ -24,18 +24,29 @@ except:
             -s = Download season per season
         """)
 else:
+    saison = "0"
+    episode = "0"
     try: 
         verbose = sys.argv[3]
         if(verbose == '-v'):
-           class MyLogger(object):
-            def debug(self, msg):
-                print(msg)
+            class MyLogger(object):
+                def debug(self, msg):
+                    print(msg)
 
-            def warning(self, msg):
-                print(msg)
+                def warning(self, msg):
+                    print(msg)
 
-            def error(self, msg):
-                print(msg)
+                def error(self, msg):
+                    print(msg)
+
+            ydl_opts = {
+                'format': 'bestaudio/best',
+                'outtmpl': f'The Simpson/The Simpson - S{saison}E{episode}.mp4',
+                'no_warnings' : True,
+                'logger': MyLogger(),
+                'verbose': True
+            }
+            
         print("Verbose mode enabled.")
     except:
         class MyLogger(object):
@@ -48,14 +59,21 @@ else:
             def error(self, msg):
                 pass
 
-    def bypassLogin(season, episode, link):
-        if(int(season) < 10):
-            tmp = str(season)
+        ydl_opts = {
+                'format': 'bestaudio/best',
+                'outtmpl': f'The Simpson/The Simpson - S{saison}E{episode}.mp4',
+                'no_warnings' : True,
+                'logger': MyLogger()
+            }
+
+    def bypassLogin(saison, episode, link):
+        if(int(saison) < 10):
+            tmp = str(saison)
             if(tmp[0] == "0"):
-                season = season[1:]
-            seasonZero = "0" + str(season)
+                saison = saison[1:]
+            seasonZero = "0" + str(saison)
         else: 
-            seasonZero = str(season)
+            seasonZero = str(saison)
 
         if(int(episode) < 10):
             tmp = str(episode)
@@ -65,19 +83,12 @@ else:
         else: 
             episodeZero = str(episode)
 
-        ver1 = "https://pixavideo.club/video/simpsons/" + f"{season}/S{seasonZero}E{episodeZero}EN.mp4"  
+        ver1 = "https://pixavideo.club/video/simpsons/" + f"{saison}/S{seasonZero}E{episodeZero}EN.mp4"  
 
         link = link.split("/the-simpsons/")[1]
         linkSplited = link.split("/")
         linkSplited[1] = f"{episode}-" + linkSplited[1] + "-EN.mp4"
         ver2 = "https://pixavideo.club/video/the-simpsons/" + linkSplited[0] + "/" + linkSplited[1]
-
-        ydl_opts = {
-                'format': 'bestaudio/best',
-                'outtmpl': f'The Simpson/The Simpson - S{season}E{episode}.mp4',
-                'no_warnings' : True,
-                'logger': MyLogger()
-            }
 
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:

@@ -30,7 +30,6 @@
 ### Bugs :
 
 If you have problems, you can activate the verbose mode: `-v` (at the end of your command). 
-However, this "verbose mode" will simply display youtube-dl errors and warnings. If you still can't identify your problem you can add the verbose mode of youtube-dl in the "ydl_opts".
 
 Once you've identified the problem, you can report it on GitHub.
 
