@@ -166,8 +166,7 @@ else:
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': f'The Simpson/The Simpson - S{saison}E{episode}.mp4',
-            'no_warnings' : True,
-            'logger': MyLogger()
+            'no_warnings' : True
         }
 
         print("---------------------TÉLÉCHARGEMENT---------------------")
@@ -205,8 +204,7 @@ else:
             ydl_opts = {
                 'format': 'bestaudio/best',
                 'outtmpl': f'The Simpson/The Simpson - S{saison}E{episode}.mp4',
-                'no_warnings' : True,
-                'logger': MyLogger()
+                'no_warnings' : True
             }
 
             session = HTMLSession()
