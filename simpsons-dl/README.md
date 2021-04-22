@@ -2,8 +2,11 @@
 
 **simpsons-dl** is a tool to download all episodes of The Simpsons (in **english** or **french**). The script will retrieve the episodes on the websites : simpson-en-streaming.com for French Version* and https://pixa-club.com/en/the-simpsons/ for English Version.
 
-### Requirements:
-- [Python 3.6 or higher](https://www.python.org/downloads/)
+## Language :
+Python.
+
+## Requiremnts : 
+- [FFMPEG](https://www.google.com/search?q=how+to+install+FFMPEG) (in PATH for Windows users.)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 
 ### How to use it:

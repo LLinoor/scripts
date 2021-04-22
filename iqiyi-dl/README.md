@@ -2,7 +2,7 @@
 Python.
 
 ## Requiremnts : 
-- FFMPEG (in PATH for Windows users.)
+-  [FFMPEG](https://www.google.com/search?q=how+to+install+FFMPEG) (in PATH for Windows users.)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 
 ## How to use :
@@ -23,6 +23,12 @@ To retrieve and download the video from the iQiyi servers, you will need to fetc
 ![Step 5 in picture](https://github.com/LLinoor/scripts/blob/main/iqiyi-dl/resources/2.png?raw=true)
 
 - Step 6 : Paste the link when the script asks you to.
+
+### Skip FFMPEG part : 
+
+At the end of each download the script assembles the video with subtitles into an .mkv file and then deletes the old files, but sometimes the conversion cannot be done correctly and the script deletes the old files while the .mkv file does not exist.
+
+To avoid this add the `-s` argument when you call the script
 
 ## Warnings and explanations :
 
